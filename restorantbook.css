@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.hotel {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.hotel-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.hotel-info {
+    flex: 1;
+}
+
+.hotel-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.hotel-info p {
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color:green; 

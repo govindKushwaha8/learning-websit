@@ -1,0 +1,1352 @@
+<html></html>
+ <head>
+  <title>
+   hotels
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 70%;
+            height: 90%;
+            margin: 20px auto;
+        }
+        .hotel-card {
+            height: 45%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            transition: 0.3s ease-in-out;
+           
+        }
+
+        #c1{
+            background-color: #e0f2ffc1;
+        }
+        #c2{
+            background-color: rgba(244, 202, 202, 0.467);
+        }
+        .hotel-card:hover{
+            box-shadow: 0 0 10px #333;
+            transform: scale(1.01);
+        }
+        .hotel-card img {
+            width: 300px;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            transition: 0.2s;
+        }
+        .hotel-card img:hover{
+            opacity: 0.9;
+        }
+        
+        .hotel-info {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 250px; 
+            cursor: pointer;
+        }
+        .hotel-info h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #000000;
+        }
+        .hotel-info .location {
+            color: #0071c2;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .hotel-info .offers {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .hotel-info .offers span {
+            background-color: #628cb6;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        .hotel-info .offers span:hover{
+            background-color: #32567bf0;
+        }
+
+        .hotel-info .price {
+            font-size: 24px;
+            color: #d32f2f;
+            font-weight: bold;
+            text-align: right;
+        }
+      
+        .hotel-info .review {
+            font-size: 14px;
+            color: #666;
+            text-align: right;
+        }
+        .hotel-info .review .score {
+            font-size: 18px;
+            color: #0071c2;
+            font-weight: bold;
+        }
+        .hotel-info .review .reviews {
+            font-size: 14px;
+            color: #666;
+        }
+        .hotel-info .cta {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #0071c2;
+            margin-top: 20px;
+        }
+        .hotel-info .cta a {
+            color: #0071c2;
+            text-decoration: none;
+            
+        }
+        .hotel-info .cta a:hover {
+            text-decoration: underline;
+        }
+        .hotel-info .badge {
+            background-color: #ee3322;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: 10px;
+            width: 100px; 
+            text-align: center;
+            margin-left: auto;
+            margin-top: 20px; 
+            transition: 0.2s;
+            font-weight: 600;
+        }
+        #badge2{
+          background-color: #50cd27;
+          color: black;
+          margin-top: 10px;
+          font-weight: 600;
+        }
+
+        .badge:hover{
+            background-color: #9c2116;
+        }
+        
+        .free-cancellation {
+            color: #12ce44;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+        .gap {
+            margin-top: 20px;
+        }
+        .small{
+            font-size: 12px;
+            font-weight: 200;
+        }
+        .cashback{
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+        }
+  </style>
+ </head>
+ <body>
+
+
+
+     
+    
+  <div class="container">
+    <div class="hotel-card" id="c1">
+     
+        
+        <img alt="Hotel Shivdev International" height="400" src="nh1.jpeg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Hotel Shivdev International
+        <br>
+        <span style="color: #5b570c;">
+         ★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        8518/22 Arakashan Road, PaharGanj, New Delhi, 110055, India
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +1
+        </span>
+       </div>
+       <div class="cta">
+        <a href="https://www.guestreservations.com/hotel-shivdev-international/booking?msclkid=9fa2677f76371f582ac40184f7a08026">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         5.3
+        </span>
+        Review score
+        <div class="reviews">
+         450 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 9000
+            </div>
+        Rs. 7,475
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+        <img alt="Hotel King Plaza" height="400" src="h2.jpg" width="300"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Hotel King Plaza
+        <br>
+       <span style="color: #5b5702;">
+         ★★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Mahipalpur Road No 5 Mahipalpur New Delhi, New Delhi, India
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Agoda Preferred
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       <div class="cta">
+         <a href="https://king-plaza.hotels-newdelhi.com/en/">
+             <i class="fa fa-credit-card"></i>
+          Book without a credit card
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 793
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs38 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         7.1
+        </span>
+        Very good
+        <div class="reviews">
+         688 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 3 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 1811 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         5931
+         <br>
+         Rs. 4681
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 3811
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+    
+    
+  <div class="container">
+    <div class="hotel-card" id="c1">
+     <img alt="Hotel Shivdev International" height="400" src="nh3.jpg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Rambagh Palace 
+
+         <br>
+        <span style="color: #5b570c;">
+         ★★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Bhawani Singh Road, Ashok Nagar, Jaipur, India, 302005 
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +3
+        </span>
+       </div>
+       <div class="cta">
+        <a href="https://www.agoda.com/en-in/rambagh-palace_12/hotel/jaipur-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1914936&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=c4889664-f4e4-46b7-ac59-a44328a0bc38&tspTypes=16&los=1&searchrequestid=fb39672f-a6e9-480f-9650-d1231248c1a0&ds=VCf0esZHZ%2BSXZssp">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         4.3
+        </span>
+        Review score
+        <div class="reviews">
+         950 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 60,000
+            </div>
+        Rs. 56,475
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+     <img alt="Hotel King Plaza" height="400" src="nh44.jpg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Trident Hotal
+        <br>
+       <span style="color: #5b5702;">
+         ★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Udaipur -Near Railwaystation -5.6 km to station
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         WiFi
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       <div class="cta">
+         <a href="https://www.agoda.com/en-in/pages/agoda/default/DestinationSearchResult.aspx?selectedproperty=1893&city=3667&hid=1893&site_id=1914936&tag=93b1a95d-2e07-4e1b-b9d4-374a4bf85374&msclkid=22087e7d29a9182c9e331886aeea3851&ds=JKEjDbPf%2BG3SWS63">
+             <i class="fa fa-credit-card"></i>
+          Book without a credit card
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 693
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs38 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         4.1
+        </span>
+        Very good
+        <div class="reviews">
+         988 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 9 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 681 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         23,531
+         <br>
+         Rs. 21,987
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 18,987
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  <div class="container">
+    <div class="hotel-card" id="c1">
+     <img alt="Hotel Shivdev International" height="400" src="nh5.jpg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        The Oberoi Udaivilas
+        <br>
+        <span style="color: #5b570c;">
+         ★★★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Haridasji Ki Magri, Lake City, Udaipur, India, 313001 
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +5
+        </span>
+       </div>
+       <div class="cta">
+        <a href="https://www.agoda.com/en-in/pages/agoda/default/DestinationSearchResult.aspx?selectedproperty=111166&city=3667&hid=111166&site_id=1914936&tag=32b26736-e970-4f97-b373-12f552a622f8&msclkid=92b8204285c31ae2133e46b90c881ed2&ds=UD8J1RxAzahSkgvz">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         5.3
+        </span>
+        Review score
+        <div class="reviews">
+         3450 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 60,000
+            </div>
+        Rs. 39,475
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+     <img alt="Hotel King Plaza" height="400" src="nh6.jpeg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Umaid Bhawan Palace
+        <br>
+       <span style="color: #5b5702;">
+         ★★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Near Circuit House Road, Cantt Area, Jodhpur, India, 342006 
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+            Pool
+           </span>
+        <span>
+         Agoda Preferred
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       <div class="cta">
+         <a href="https://www.agoda.com/en-in/umaid-bhawan-palace-jodhpur/hotel/jodhpur-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1914936&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f4fc7d8-19b6-4898-9997-d4bda87828dc&tspTypes=16&los=1&searchrequestid=998f9669-16e9-471e-8298-4614ac6ea175&ds=jHlqjx2Qv8NXsvCp">
+             <i class="fa fa-credit-card"></i>
+          Book without a credit card
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 1200
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs388 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         7.1
+        </span>
+        Very good
+        <div class="reviews">
+         3688 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 5 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 1800 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         93,981
+         <br>
+         Rs. 90,681
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 78,383
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  <div class="container">
+    <div class="hotel-card" id="c1">
+     <img alt="Hotel Shivdev International" height="400" src="nh7.jpeg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        The Oberoi Amarvilas
+        <br>
+        <span style="color: #5b570c;">
+         ★★★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Taj East Gate Road, Tajganj, Agra, India, 282001 
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+            Pool
+           </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +6
+        </span>
+       </div>
+       <div class="cta">
+        <a href="https://www.agoda.com/en-in/the-oberoi-amarvilas-agra-hotel/hotel/agra-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1914936&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=1c0cd56f-0db9-4083-aebb-4075414f2e6f&tspTypes=16&los=1&searchrequestid=056c7770-e575-439a-afba-935261c887cb&ds=zomx62vedPntYgpj">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         5.3
+        </span>
+        Review score
+        <div class="reviews">
+         8450 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 55000
+            </div>
+        Rs. 34,060
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+     <img alt="Hotel King Plaza" height="400" src="nh8.jpeg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        The Oberoi
+        <br>
+       <span style="color: #5b5702;">
+         ★★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Nariman Point, South Mumbai, Mumbai, India, 400021 
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Agoda Preferred
+        </span>
+        <span>
+            +3
+           </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       <div class="cta">
+         <a href="https://www.agoda.com/en-in/the-oberoi-mumbai-hotel/hotel/mumbai-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1914936&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-10-10&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=9c1a58a0-5fb1-4d06-b646-b5fe19d8330c&tspTypes=16&los=1&searchrequestid=04255d99-b5cc-4c7c-a849-673522b0a885&ds=RI%2FAYBjkOJ%2FnR4fU">
+             <i class="fa fa-credit-card"></i>
+          Book without a credit card
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 793
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs380 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         7.1
+        </span>
+        Very good
+        <div class="reviews">
+         4688 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 1 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 2800 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         20090
+         <br>
+         Rs. 1900
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 16064
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+   
+    
+  <div class="container">
+    <div class="hotel-card" id="c1">
+     <img alt="Hotel Shivdev International" height="400" src="nh9.jpg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Wildflower Hall
+        <br>
+        <span style="color: #5b570c;">
+         ★★★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Mashobra, Chharabra, Shimla, Himachal Pradesh 171012
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +2
+        </span>
+       </div>
+       <div class="cta">
+        <a href="https://www.bing.com/travel/hotels/detail?q=Wildflower+Hall%2C+An+Oberoi+Resort%2C+Shimla&id=YN4070x11394169011604016119&hname=Wildflower+Hall%2C+An+Oberoi+Resort%2C+Shimla&loc=Shimla%2C+Himachal+Pradesh%2C+IN&displaytext=Shimla%2C+Himachal+Pradesh%2C+IN&lat=31.11389&lon=77.24781&cin=2024-11-17&cout=2024-11-18&guests=2A0C&age=&hotellistid=YN4070x11394169011604016119&type=hotel&form=HTSEST&entrypoint=HTSEST">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         4.3
+        </span>
+        Review score
+        <div class="reviews">
+         6450 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 30000
+            </div>
+        Rs. 27,475
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+     <img alt="Hotel King Plaza" height="400" src="nh10.jpeg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Taj Palace
+        <br>
+       <span style="color: #5b5702;">
+         ★★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        2 Sardar Patel Marg Diplomatic Enclave, New Delhi, Delhi 110021
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Agoda Preferred
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       <div class="cta">
+         <a href="https://www.bing.com/travel/hotels/detail?q=Taj+Palace&id=YN4070x504114125380589472&hname=Taj+Palace&loc=New+Delhi%2C+Delhi%2C+IN&displaytext=New+Delhi%2C+Delhi%2C+IN&lat=28.59505&lon=77.17089&cin=2024-11-17&cout=2024-11-18&guests=2A0C&age=&hotellistid=YN4070x504114125380589472&type=hotel&form=HTSEST&entrypoint=HTSEST">
+             <i class="fa fa-credit-card"></i>
+          Book without a credit card
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 793
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs549 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         7.1
+        </span>
+        Very good
+        <div class="reviews">
+         3688 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 8 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 1811 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         15078
+         <br>
+         Rs. 13388
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 611
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+     
+    
+  <div class="container">
+    <div class="hotel-card" id="c1">
+     <img alt="Hotel Shivdev International" height="400" src="h13.jpg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Rambagh Palace 
+
+         <br>
+        <span style="color: #5b570c;">
+         ★★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        jaipur , India - City center
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +3
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         4.3
+        </span>
+        Review score
+        <div class="reviews">
+         950 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 16000
+            </div>
+        Rs. 9,475
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+     <img alt="Hotel King Plaza" height="400" src="h14.jpg" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Trident Hotal
+        <br>
+       <span style="color: #5b5702;">
+         ★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Udaipur -Near Railwaystation -5.6 km to station
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         WiFi
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       <div class="cta">
+         <a href="#">
+             <i class="fa fa-credit-card"></i>
+          Book without a credit card
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 693
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs38 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         4.1
+        </span>
+        Very good
+        <div class="reviews">
+         988 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 9 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 681 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         2,531
+         <br>
+         Rs. 1,681
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 1550
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container">
+    <div class="hotel-card" id="c1">
+     <img alt="Hotel Shivdev International" height="400" src="https://upload.wikimedia.org/wikipedia/commons/7/79/HK_Four_Seasons_Hotel_IMG_4918.JPG" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Hotel Shivdev International
+        <br>
+        <span style="color: #5b570c;">
+         ★★★
+        </span>
+       </h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        8518-22 Arakashan Road, Pahar Ganj, Delhi 110055
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Parking
+        </span>
+        <span>
+         Express check-in
+        </span>
+        <span>
+         +1
+        </span>
+       </div>
+       <div class="cta">
+        <a href="https://www.bing.com/travel/hotels/detail?q=Hotel+Shivdev+International&id=YN4070x4312514923363808002&hname=Hotel+Shivdev+International&loc=Pahar+Ganj%2C+Delhi%2C+IN&displaytext=Pahar+Ganj%2C+Delhi%2C+IN&lat=28.645708&lon=77.21676&cin=2024-11-17&cout=2024-11-18&guests=2A0C&age=&hotellistid=YN4070x4312514923363808002&type=hotel&form=HTSEST&entrypoint=HTSEST">
+         <i class="fa fa-credit-card"></i>
+         Book without a credit card
+        </a>
+       </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         5.3
+        </span>
+        Review score
+        <div class="reviews">
+         450 reviews
+        </div>
+       </div>
+       <div class="price" style="text-align: right; margin-top: 125px; ">
+         <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+             Rs 18,600
+            </div>
+        Rs. 14,475
+        <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="hotel-card" id="c2">
+     <img alt="Hotel King Plaza" height="400" src="https://images.trvl-media.com/lodging/23000000/22890000/22882300/22882236/c04c718c.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" width="200"/>
+     <div class="hotel-info">
+      <div>
+       <h2>
+        Hotel King Plaza
+        <br>
+       <span style="color: #5b5702;">
+         ★★★★
+        </span></h2>
+       <div class="location">
+        <i class="fas fa-map-marker-alt">
+        </i>
+        Indira Gandhi Int'l Airport, New Delhi and NCR - 11.8 km to center
+       </div>
+       <div class="offers">
+        <span>
+         Breakfast
+        </span>
+        <span>
+         Agoda Preferred
+        </span>
+       </div>
+       <div class="cta">
+        <a href="#">
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Agoda Preferred
+        </a>
+       </div>
+       
+        <div class="cta">
+            <a href="https://www.bing.com/travel/hotels/detail?q=Taj+Palace&id=YN4070x504114125380589472&hname=Taj+Palace&loc=New+Delhi%2C+Delhi%2C+IN&displaytext=New+Delhi%2C+Delhi%2C+IN&lat=28.59505&lon=77.17089&cin=2024-11-17&cout=2024-11-18&guests=2A0C&age=&hotellistid=YN4070x504114125380589472&type=hotel&form=HTSEST&entrypoint=HTSEST">
+                <i class="fa fa-credit-card"></i>
+             Book without a credit card
+            </a>
+           </div>
+        <div class="cta">
+         <a href="#">
+             <i class="fa fa-cash-register"></i>
+          Cashback Rewards Rs 793
+         </a>
+        </div>
+        <div class="cta">
+         <a href="#" style="color: green;">
+             <i class="fa fa-tag"></i>
+          AGODASPONSORED applied- Rs38 off
+         </a>
+        </div>
+      </div>
+      <div>
+       <div class="review" style="text-align: right;">
+        <span class="score">
+         7.1
+        </span>
+        Very good
+        <div class="reviews">
+         688 reviews
+        </div>
+       </div>
+       <div class="badge">
+        ONLY 3 LEFT
+       </div>
+        <div class="badge" id="badge2">
+        Rs. 1811 applied
+       </div>
+       <div class="price" style="text-align: right; margin-top: auto;">
+        <div style="text-decoration: line-through; color: #666; font-size:15px; margin-top:20px;">
+         931
+         <br>
+         Rs. 681
+        </div>
+        
+        <small class="cashback">
+         Subject to Cashback Terms 
+        </small>
+         <div style="color: #d32f2f;"></div>
+         Rs. 611
+         <br>
+        <small class="small">
+         Per night before taxes and fees
+        </small>
+        <div class="free-cancellation">
+         + FREE CANCELLATION
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>  
+     <p style="text-align: center;">MADE WITH <i class="fa fa-heart"></i> GOVIND KUSHWAHA <BR>NITISH KUMAR <BR> ANKUSH PAL</BR></BR></p>
+
+
+
+
+
+ </body>
+</html>
